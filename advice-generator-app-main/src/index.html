@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Advice generator app</title>
+  <link rel="stylesheet" href="./styles.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <main>
+    <article class="content">
+      <div id="loader" class="none">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="advice-content">
+        <p class="advice-id">Advice ID #<span id="id"></span></p>
+        <p class="advice-text"></p>
+        <div class="separator">
+          <img src="./images/pattern-divider-desktop.svg" alt="">
+        </div>
+      </div>
+      <button class="play">
+        <img src="./images/icon-dice.svg" alt="dice">
+      </button>
+    </article>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Enrique SF</a>.
+  </footer>
+
+  <script src="./script.js" type="module"></script>
+</body>
+
+</html>
