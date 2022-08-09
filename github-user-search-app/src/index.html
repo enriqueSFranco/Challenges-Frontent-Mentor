@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <title>git user app</title>
+</head>
+
+<body data-theme>
+  <header class="header container">
+    <div class="header-top">
+      <h1 class="header-title">devfinder</h1>
+      <div class="header-theme">
+        <label>
+          <span class="theme-text"></span>
+          <input data-btn type="checkbox">
+        </label>
+        <span class="theme-symbol"></span>
+      </div>
+    </div>
+    <div class="wrapper-form" data-theme-element>
+      <form id="form" class="form">
+        <span class="icon">
+          <ion-icon name="search-outline"></ion-icon>
+        </span>
+        <input id="input-search" class="input-search" type="text" autocomplete="off" autofocus="off"
+          placeholder="search github username...">
+        <input id="input-submit" class="input-btn" type="submit" value="search">
+      </form>
+    </div>
+  </header>
+
+  <main data-theme class="container">
+    <article data-theme-element class="wrapper-devfinder">
+      <figure class="dev-info">
+        <img class="dev-photo">
+        <figcaption>
+          <h2 class="dev-name">The Octacat</h2>
+          <h3 class="dev-user">@octacat</h3>
+          <h5 class="dev-joind">joined 25 jan 2011</h5>
+        </figcaption>
+      </figure>
+      <span class="dev-bio">This profile has no bio</span>
+      <div class="dev-statistics">
+        <ul class="dev-statistics__list">
+          <li class="dev-statistics__list-item">
+            <span>Repos</span>
+            <span id="respos" class="number"></span>
+          </li>
+          <li class="dev-statistics__list-item">
+            <span>Followers</span>
+            <span id="followers" class="number"></span>
+          </li>
+          <li class="dev-statistics__list-item">
+            <span>following</span>
+            <span id="following" class="number"></span>
+          </li>
+        </ul>
+      </div>
+      <div class="dev-socialnetwork">
+        <ul class="dev-socialnetwork__list">
+          <li class="dev-socialnetwork__list-item">
+            <span id="location">
+            </span>
+          </li>
+          <li class="dev-socialnetwork__list-item">
+            <span id="web-site" class="web-site">
+              <ion-icon name="globe-outline"></ion-icon>
+              <a href="#"></a>
+            </span>
+          </li>
+          <li class="dev-socialnetwork__list-item">
+            <span id="twitter">
+
+            </span>
+          </li>
+          <li class="dev-socialnetwork__list-item">
+            <span id="company">
+            </span>
+          </li>
+        </ul>
+      </div>
+    </article>
+  </main>
+  <script type="module" src="./app.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
