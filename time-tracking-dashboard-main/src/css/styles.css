@@ -1,0 +1,278 @@
+:root {
+  --blue: hsl(246, 80%, 60%);
+  --light-red-work: hsl(15, 100%, 70%);
+  --soft-blue-play: hsl(195, 74%, 62%);
+  --light-red-study: hsl(348, 100%, 68%);
+  --lime-green-exercise: hsl(145, 58%, 55%);
+  --violet-social: hsl(264, 64%, 52%);
+  --soft-orange-self-care: hsl(43, 84%, 65%);
+
+  --very-dark-blue: hsl(226, 43%, 10%);
+  --dark-blue: hsl(235, 46%, 20%);
+  --desaturated-blue: hsl(235, 45%, 61%);
+  --pale-blue: hsl(236, 100%, 87%);
+}
+
+html {
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--very-dark-blue);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main {
+  /* background-color: red; */
+  flex: 1;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card-body {
+  background-color: var(--dark-blue);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--blue);
+  border-radius: 1rem;
+}
+
+.card-header img {
+  max-width: 100px;
+  height: auto;
+}
+
+.border-img {
+  display: grid;
+  place-content: center;
+  width: 130px;
+  height: fit-content;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: .2rem;
+}
+
+.user-info {
+  width: 100%;
+}
+
+.report, .username {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--pale-blue);
+}
+
+.username {
+  margin-top: .5rem;
+  font-size: 1.5rem;
+}
+
+.card-actions {
+  padding: 1rem 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin: 1rem 0;
+  color: var(--desaturated-blue);
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.selected {
+  color: var(--pale-blue);
+}
+
+.card-activity__info {
+  height: 80px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--dark-blue);
+  padding: 1rem;
+  border-radius: 1rem;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  transition: background-color .5s ease;
+  cursor: pointer;
+}
+
+.card-activity__info:hover {
+  background-color: var(--blue);
+}
+
+.card-activity__info-left,
+.card-activity__info-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.card-activity__info-right {
+  align-items: flex-end;
+  justify-content: space-around;
+  font-size: 1rem;
+  color: var(--pale-blue);
+}
+
+.card-activity__info-right img {
+  width: 25px;
+}
+
+.activities {
+  width: 100%;
+  height: fit-content;
+  /* outline: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card-activity {
+  border-radius: 1rem;
+  position: relative;
+  /* outline: 2px solid yellow; */
+  height: 170px;
+}
+
+.icon-activity {
+  /* outline: 2px solid red; */
+  position: absolute;
+  right: 0;
+  top: 0;
+
+}
+
+.work {
+  background-color: var(--light-red-work);
+}
+
+.play {
+  background-color: var(--soft-blue-play);
+}
+
+.study {
+  background-color: var(--light-red-study);
+}
+
+.exercise {
+  background-color: var(--lime-green-exercise);
+}
+
+.social {
+  background-color: var(--violet-social);
+}
+
+.self-care {
+  background-color: var(--soft-orange-self-care);
+}
+
+/* media querys */
+
+@media screen and (min-width: 1440px) {
+  main {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: repeat(2, 450px);
+
+    grid-template-areas: "header main"
+                          "header main";
+  }
+
+  .activities {
+    width: 100%;
+    height: 60%;
+    /* outline: 2px solid red; */
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(3, 230px);
+    align-content: space-between;
+  }
+
+  .card-body {
+    grid-area: header;
+    height: 60%;
+    position: relative;
+  }
+
+  .card-activity {
+    height: 250px;
+  }
+
+  .card-activity__info {
+    height: 160px;
+    /* outline: 2px solid slateblue; */
+  }
+
+  .card-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* width: 300px; */
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card-actions {
+    /* outline: 2px solid yellow; */
+    position: absolute;
+    bottom: 2rem;
+    left: 0rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .btn {
+    /* outline: 2px solid gainsboro; */
+    margin-left: 1rem;
+  }
+
+  .username {
+    font-size: 2.5rem;
+  }
+
+  .border-img {
+    width: 100px;
+  }
+}
