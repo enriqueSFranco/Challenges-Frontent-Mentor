@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="header container">
+    <div class="header-top">
+      <h1 class="header-title">Social Media Dashboard</h1>
+      <span class="total-followers">Total Followers: 23,004</span>
+    </div>
+
+    <div class="switch-dark-mode">
+      <span class="text-dark-mode">Dark Mode</span>
+      <div class="btn-dark-mode">
+        <label class="switch">
+          <input id="checked" type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="social-network" class="social-network container">
+      <article data-theme class="card-social-network" style='--border-color: hsl(208, 92%, 53%);'>
+        <div data-theme class="card-social-header">
+          <img src="./images/icon-facebook.svg" alt="facebook">
+          <span class="username">@nathanf</span>
+        </div>
+        <div class="card-social-info">
+          <h1 class="total-followers-facebook">1987</h1>
+          <span data-theme class="text-followers">Followers</span>
+        </div>
+        <div class="card-social-footer">
+          <img src="./images/icon-up.svg" alt="arrow-up">
+          <span class="today" style='--color: hsl(163, 72%, 41%);'>12 Today</span>
+        </div>
+      </article>
+
+      <article data-theme class="card-social-network" style='--border-color: hsl(203, 89%, 53%);'>
+        <div class="card-social-header">
+          <img src="./images/icon-twitter.svg" alt="twitter">
+          <span class="username">@nathanf</span>
+        </div>
+        <div class="card-social-info">
+          <h1 class="total-followers-facebook">1044</h1>
+          <span class="text-followers">Followers</span>
+        </div>
+        <div class="card-social-footer">
+          <img src="./images/icon-up.svg" alt="arrow-up">
+          <span class="today" style='--color: hsl(163, 72%, 41%);'>99 Today</span>
+        </div>
+      </article>
+
+      <article data-theme class="card-social-network"
+        style='--start-color: hsl(37, 97%, 70%); --end-color: hsl(329, 70%, 58%);'>
+        <div class="card-social-header">
+          <img src="./images/icon-instagram.svg" alt="instagram">
+          <span class="username">@nathanf</span>
+        </div>
+        <div class="card-social-info">
+          <h1 class="total-followers-facebook">11k</h1>
+          <span class="text-followers">Followers</span>
+        </div>
+        <div class="card-social-footer">
+          <img src="./images/icon-up.svg" alt="arrow-up">
+          <span class="today" style='--color: hsl(163, 72%, 41%);'>1099 Today</span>
+        </div>
+      </article>
+
+      <article data-theme class="card-social-network" style='--border-color: hsl(348, 97%, 39%);'>
+        <div class="card-social-header">
+          <img src="./images/icon-youtube.svg" alt="facebook">
+          <span class="username">@nathanf</span>
+        </div>
+        <div class="card-social-info">
+          <h1 class="total-followers-facebook">8239</h1>
+          <span class="text-followers">Followers</span>
+        </div>
+        <div class="card-social-footer">
+          <img src="./images/icon-down.svg" alt="arrow-up">
+          <span class="today" style='--color: hsl(356, 69%, 56%);'>144 Today</span>
+        </div>
+      </article>
+    </section>
+
+    <section id="overview-today" class="overview-today container">
+      <h2 class="overview-title">Overview - Today</h2>
+      <article data-theme class="card-overview">
+        <div class="card-overview-top">
+          <span class="card-overview-title">Page Views</span>
+          <img src="./images/icon-facebook.svg" alt="facebook">
+        </div>
+        <div class="card-overview-bottom">
+          <h2 class="card-overview-number">87</h2>
+          <div class="container-porcent">
+            <img src="./images/icon-up.svg" alt="arrow-up">
+            <span class="porcent" style='--color: hsl(163, 72%, 41%);'>3%</span>
+          </div>
+        </div>
+      </article>
+
+      <article data-theme class="card-overview">
+        <div class="card-overview-top">
+          <span class="card-overview-title">Likes</span>
+          <img src="./images/icon-facebook.svg" alt="facebook">
+        </div>
+        <div class="card-overview-bottom">
+          <h2 class="card-overview-number">52</h2>
+          <div class="container-porcent">
+            <img src="./images/icon-down.svg" alt="arrow-down">
+            <span class="porcent" style='--color: hsl(356, 69%, 56%);'>2%</span>
+          </div>
+        </div>
+      </article>
+
+      <article data-theme class="card-overview">
+        <div class="card-overview-top">
+          <span class="card-overview-title">Likes</span>
+          <img src="./images/icon-instagram.svg" alt="instagram">
+        </div>
+        <div class="card-overview-bottom">
+          <h2 class="card-overview-number">5462</h2>
+          <div class="container-porcent">
+            <img src="./images/icon-up.svg" alt="arrow-up">
+            <span class="porcent" style='--color: hsl(163, 72%, 41%);'>2257%</span>
+          </div>
+        </div>
+      </article>
+
+      <article data-theme class="card-overview">
+        <div class="card-overview-top">
+          <span class="card-overview-title">Page Views</span>
+          <img src="./images/icon-facebook.svg" alt="facebook">
+        </div>
+        <div class="card-overview-bottom">
+          <h2 class="card-overview-number">87</h2>
+          <div class="container-porcent">
+            <img src="./images/icon-up.svg" alt="arrow-up">
+            <span class="porcent" style='--color: hsl(163, 72%, 41%);'>3%</span>
+          </div>
+        </div>
+      </article>
+
+      <article data-theme class="card-overview">
+        <div class="card-overview-top">
+          <span class="card-overview-title">Profile Views</span>
+          <img src="./images/icon-instagram.svg" alt="instagram">
+        </div>
+        <div class="card-overview-bottom">
+          <h2 class="card-overview-number">52k</h2>
+          <div class="container-porcent">
+            <img src="./images/icon-up.svg" alt="arrow-up">
+            <span class="porcent" style='--color: hsl(163, 72%, 41%);'>1375%</span>
+          </div>
+        </div>
+      </article>
+
+      <article data-theme class="card-overview">
+        <div class="card-overview-top">
+          <span class="card-overview-title">Retweets</span>
+          <img src="./images/icon-twitter.svg" alt="twitter">
+        </div>
+        <div class="card-overview-bottom">
+          <h2 class="card-overview-number">117</h2>
+          <div class="container-porcent">
+            <img src="./images/icon-up.svg" alt="arrow-up">
+            <span class="porcent" style='--color: hsl(163, 72%, 41%);'>303%</span>
+          </div>
+        </div>
+      </article>
+
+      <article data-theme class="card-overview">
+        <div class="card-overview-top">
+          <span class="card-overview-title">Likes</span>
+          <img src="./images/icon-twitter.svg" alt="twitter">
+        </div>
+        <div class="card-overview-bottom">
+          <h2 class="card-overview-number">507</h2>
+          <div class="container-porcent">
+            <img src="./images/icon-up.svg" alt="arrow-up">
+            <span class="porcent" style='--color: hsl(163, 72%, 41%);'>553%</span>
+          </div>
+        </div>
+      </article>
+
+
+      <article data-theme class="card-overview">
+        <div class="card-overview-top">
+          <span class="card-overview-title">Likes</span>
+          <img src="./images/icon-youtube.svg" alt="youtube">
+        </div>
+        <div class="card-overview-bottom">
+          <h2 class="card-overview-number">107</h2>
+          <div class="container-porcent">
+            <img src="./images/icon-down.svg" alt="arrow-down">
+            <span class="porcent" style='--color: hsl(356, 69%, 56%);'>19%</span>
+          </div>
+        </div>
+      </article>
+
+      <article data-theme class="card-overview">
+        <div class="card-overview-top">
+          <span class="card-overview-title">Total Views</span>
+          <img src="./images/icon-youtube.svg" alt="youtube">
+        </div>
+        <div class="card-overview-bottom">
+          <h2 class="card-overview-number">1407</h2>
+          <div class="container-porcent">
+            <img src="./images/icon-down.svg" alt="arrow-down">
+            <span class="porcent" style='--color: hsl(356, 69%, 56%);'>12%</span>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">EnriqueSFranco</a>.
+  </footer>
+
+  <script type="module" src="./app.js"></script>
+</body>
+
+</html>
