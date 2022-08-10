@@ -1,0 +1,74 @@
+commit f9b3469bf4c475222ed17fd60c1e345159890f01
+Merge: eb77531 0601c0e
+Author: enriqueSFranco <enrique.sfranco04@gmail.com>
+Date:   Tue Aug 9 20:39:19 2022 -0500
+
+    Eliminacion de las estaciones del agno
+
+commit eb77531d0dddd013efc1e9fa97f2c7a89c70f268
+Merge: 4c169ea fdd2b86
+Author: enriqueSFranco <enrique.sfranco04@gmail.com>
+Date:   Tue Aug 9 20:23:37 2022 -0500
+
+    Eliminacion de las estaciones del agno
+
+commit 0601c0ef732b540060c7ee0c029de92100dc587c
+Merge: 4c169ea fdd2b86
+Author: enriqueSFranco <enrique.sfranco04@gmail.com>
+Date:   Tue Aug 9 20:23:37 2022 -0500
+
+    Resolviendo conflicto en estacion del agno y fechas de inicio en el archivo index.html
+
+commit 4c169ea1cf9b4b718fc65cc60e29d64d61f13493
+Author: enriqueSFranco <enrique.sfranco04@gmail.com>
+Date:   Tue Aug 9 19:47:48 2022 -0500
+
+    Agregando estaciones del agno con fecha de inicio
+
+commit fdd2b86d37001d23ca83c5493cca5d974d724383
+Author: enriqueSFranco <enrique.sfranco04@gmail.com>
+Date:   Tue Aug 9 19:47:48 2022 -0500
+
+    Agregando las estaciones del agno
+
+commit c0dec2d1bec170fe6e2f98a3aedd590e922e527d
+Author: enriqueSFranco <enrique.sfranco04@gmail.com>
+Date:   Tue Aug 9 17:48:50 2022 -0500
+
+    time tracking dashboard
+
+commit 7f90a7270c393164ad7a1d5d0ae90fcb2ed24fa8
+Author: enriqueSFranco <enrique.sfranco04@gmail.com>
+Date:   Tue Aug 9 17:45:05 2022 -0500
+
+    social media
+
+commit 294b6812ea0563f9fe7fca57cde21e981526bd21
+Author: enriqueSFranco <enrique.sfranco04@gmail.com>
+Date:   Tue Aug 9 17:24:41 2022 -0500
+
+    github-user-app
+
+commit f788532ccb6e4fae532e5bb236e3c30d0f1b0b0b
+Author: enriqueSFranco <enrique.sfranco04@gmail.com>
+Date:   Tue Aug 9 13:10:55 2022 -0500
+
+    advice generator app
+
+commit a980754abb582e4eba1ac8a24fcfbb0c1ef33887
+Author: enriqueSFranco <enrique.sfranco04@gmail.com>
+Date:   Tue Aug 9 12:57:30 2022 -0500
+
+    Agregando contenido inicial al README
+
+commit 590f395cf91576ff6b011f132d0229e92ac44f4e
+Author: enriqueSFranco <enrique.sfranco04@gmail.com>
+Date:   Tue Aug 9 12:48:57 2022 -0500
+
+    Create .gitignore
+
+commit f73d201354dd05884fc5be0178241ad4b9c59b85
+Author: enriqueSFranco <enrique.sfranco04@gmail.com>
+Date:   Tue Aug 9 12:48:18 2022 -0500
+
+    Create README.md
