@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Expenses chart component</title>
+  <link rel="stylesheet" href="./styles.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+
+  <main class="app">
+    <header class="header">
+      <div class="left">
+        <h2 class="balance">My balance</h2>
+        <h2 class="pay">$921.48</h2>
+      </div>
+      <div class="rigth">
+        <svg width="72" height="48" viewBox="0 0 72 48" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" fill-rule="evenodd">
+            <circle fill="#382314" cx="48" cy="24" r="24" />
+            <circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23" />
+          </g>
+        </svg>
+      </div>
+    </header>
+    <article class="content">
+      <h2 class="title-content">Spending - Last 7 days</h2>
+      <div class="wrapper">
+      </div>
+      <footer class="footer">
+        <div class="footer-left">
+          <span class="subtitle">Total this month</span>
+          <h2 class="pay-footer" style="--pay: 1.4rem">$478.33</h2>
+        </div>
+        <div class="footer-rigth">
+          <h2 class="porcent" style="--porcent: .8rem">+2.4%</h2>
+          <span class="subtitle">from last month</span>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <script type="module" src="./script.js"></script>
+</body>
+
+</html>

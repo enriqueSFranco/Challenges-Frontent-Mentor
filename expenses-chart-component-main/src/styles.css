@@ -1,0 +1,154 @@
+:root {
+  --dark-brown: hsl(25, 47%, 15%);
+  --medium-brown: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --very-pale-orange: hsl(33, 100%, 98%);
+
+  --soft-red: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-size: 18px;
+}
+
+body {
+  background-color: var(--cream);
+  height: 100vh;
+  width: 100%;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  display: grid;
+  place-content: center;
+}
+
+main {
+  width: 400px;
+  height: fit-content;
+}
+
+.bar {
+  height: var(--height);
+  width: 40px;
+  background-color: var(--soft-red);
+  border-radius: .2rem;
+  cursor: pointer;
+}
+
+.bar.active {
+  background-color: var(--cyan);
+}
+
+.chart {
+  height: var(--height);
+  width: 100%;
+}
+
+.content {
+  background-color: var(--very-pale-orange);
+  margin-top: 1rem;
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.day {
+  color: var(--medium-brown);
+  font-size: .9rem;
+}
+
+.footer {
+  bottom: 1rem;
+  margin: 0 1rem .5rem 1rem;
+  padding-top: .5rem;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ccc;
+}
+
+.footer-left {
+  margin-left: .5rem;
+}
+
+.footer-rigth {
+  margin-right: .5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.header {
+  width: 100%;
+  height: 120px;
+  border-radius: .5rem;
+  background-color: var(--soft-red);
+  color: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left {
+  width: fit-content;
+  margin-left: .5rem;
+}
+
+.rigth {
+  margin-right: .5rem;
+}
+
+.balance  {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.pay {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: .2rem;
+}
+
+.pay-footer {
+  font-size: var(--pay);
+  margin-top: .3rem;
+}
+
+.porcent {
+  font-size: var(--porcent);
+  margin-bottom: .3rem;
+}
+
+.title-content {
+  font-size: 1.3rem;
+  color: var(--dark-brown);
+  margin: 1rem 0 0 1rem;
+  justify-content: flex-start;
+}
+
+.subtitle {
+  color: var(--medium-brown);
+  font-weight: 400;
+}
+
+.wrapper-bar {
+  width: 40px;
+  height: 100%;
+}
+
+.wrapper {
+  /* outline: 2px solid orange; */
+  /* padding: 1rem 1rem 0 1rem; */
+  text-align: center;
+  margin: 1rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
